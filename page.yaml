@@ -1,0 +1,60 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]: 红
+    - generic [ref=e6]:
+      - heading "内容工作台" [level=1] [ref=e7]
+      - generic [ref=e8]: 游戏截图 → 小红书图文（第一屏只做图文流程）
+    - generic [ref=e9]: 🤖 qwen3.5-omni-flash / qwen-flash
+    - generic [ref=e10]: 模型已配置
+    - button "⚙️ 模型设置" [ref=e11] [cursor=pointer]
+  - main [ref=e12]:
+    - complementary [ref=e13]:
+      - generic [ref=e14]:
+        - heading "📷 游戏截图" [level=3] [ref=e15]
+        - paragraph [ref=e16]: 支持多张，最多 6 张；上传前会自动压缩到长边 1280px
+        - generic [ref=e17] [cursor=pointer]:
+          - generic [ref=e18]: 🖼️
+          - generic [ref=e19]: 点击上传，或把截图拖进来
+          - generic [ref=e20]: PNG / JPG / WEBP
+      - generic [ref=e21]:
+        - heading "🎛️ 生成设置" [level=3] [ref=e22]
+        - paragraph [ref=e23]: 决定正文语气和篇幅，识别阶段也会用到关注重点
+        - generic [ref=e24]:
+          - generic [ref=e25]: 语气风格
+          - generic [ref=e26]:
+            - button "真诚种草" [ref=e27] [cursor=pointer]
+            - button "毒舌吐槽" [ref=e28] [cursor=pointer]
+            - button "干货测评" [ref=e29] [cursor=pointer]
+            - button "情绪共鸣" [ref=e30] [cursor=pointer]
+            - button "幽默玩梗" [ref=e31] [cursor=pointer]
+        - generic [ref=e32]:
+          - generic [ref=e33]: 目标受众
+          - combobox [ref=e34]:
+            - option "喜欢手游的年轻玩家" [selected]
+            - option "二次元玩家"
+            - option "休闲轻量玩家"
+            - option "硬核数值党"
+            - option "泛娱乐路人"
+        - generic [ref=e35]:
+          - generic [ref=e36]: 正文长度
+          - generic [ref=e37]:
+            - button "短文 200 字" [ref=e38] [cursor=pointer]
+            - button "标准 300 字" [ref=e39] [cursor=pointer]
+            - button "长文 500 字" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - generic [ref=e42]: 识别关注点（可选）
+          - textbox "如：重点看养成系统和付费点" [ref=e43]
+        - generic [ref=e44]:
+          - generic [ref=e45]: 额外要求（可选）
+          - textbox "如：不要提氪金；结尾引导收藏" [ref=e46]
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - heading "🔎 识别结果" [level=3] [ref=e50]
+          - button "识别截图" [disabled] [ref=e51]
+        - paragraph [ref=e52]: 调用视觉模型，拆解玩法、视觉风格，并给出截图里的引用证据
+        - generic [ref=e53]: 还没有识别结果 —— 先上传截图，再点「识别截图」
+        - generic [ref=e55]:
+          - button "✨ 生成小红书图文" [disabled] [ref=e56]
+          - generic [ref=e57]: 先完成识别，再生成（保证内容有据可依）
+      - generic [ref=e58]: 还没有生成内容 —— 上传截图 → 识别 → 点「生成小红书图文」
